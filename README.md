@@ -1,12 +1,11 @@
 # Statistics
 
-Instructions to use this repo for downloading-uploading versions of our labs and quizes:
+# Create a directory. cd into it (e.g. c:\users\admin\workspace)
 
-Create a directory. cd into it (e.g. c:\users\admin\workspace)
+\code {git init}        --> this will create a hidden directory named .git inside the folder you're working
 
-git init        --> this will create a hidden directory named .git inside the folder you're working
+git config user.name "your_name_goes_here"  
 
-git config user.name "your_name_goes_here"
 git config user.email "your_email_goes_here"
 
 There is an option to make the above commands global-effective (meaning you will not have to type them each time). 
