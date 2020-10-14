@@ -10,7 +10,7 @@ There is an option to make the last 2 commands global-effective (meaning you wil
 I think it's --global, google it. It's better to not config with this option in my opinion.
 ```
 git remote add origin https://github.com/georzaza/Statistics    --> adds the origin  
-git pull origin   --> pulls the origin files (always do that, as someone else might have changed the files)
+git pull origin master  --> pulls the origin files (always do that, as someone else might have changed the files)
 ```
 do your changes or add new files or even subfolders with files on your working directory and then
 ```
@@ -19,7 +19,7 @@ git add path_of_file        --> adds only specific file or files
 
 git commit -m "The_message_of_the_commit"   --> Using this message we can track the changes later, so maybe include your name here also?
 
-git push -u origin                          --> uploads the files you added with git add command and every file will have the message of git commit command.
+git push -u origin master                        --> uploads the files you added with git add command and every file will have the message of git commit command.
 ```
 
 Hint: Maybe create a batch file to skip through some of these commads?
@@ -36,5 +36,5 @@ start_git.bat may contain e.g.:
                 git config user.name "your_name_goes_here"
                 git config user.email "your_email_goes_here"
                 git remote add origin https://github.com/georzaza/Statistics
-                git pull origin
+                git pull origin master
 ```
