@@ -2,9 +2,9 @@
 
 # Create a directory. cd into it (e.g. c:\users\admin\workspace)
 
-\code {git init}        --> this will create a hidden directory named .git inside the folder you're working
+>git init        --> this will create a hidden directory named .git inside the folder you're working
 
-git config user.name "your_name_goes_here"  
+>git config user.name "your_name_goes_here"  
 
 git config user.email "your_email_goes_here"
 
