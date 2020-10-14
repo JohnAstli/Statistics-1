@@ -1,25 +1,38 @@
 # Statistics
 
-# Create a directory. cd into it (e.g. c:\users\admin\workspace)
+## Create a directory. cd into it
+## Initialize the git
 ```
-git init        --> *this will create a hidden directory named .git inside the folder you're working*
+git init
+```
+## Initialize your git information
+```
 git config user.name "your_name_goes_here"  
 git config user.email "your_email_goes_here"
 ```
-There is an option to make the last 2 commands global-effective (meaning you will not have to type them each time). 
-I think it's --global, google it. It's better to not config with this option in my opinion.
+## Add the origin
 ```
-git remote add origin https://github.com/georzaza/Statistics    --> adds the origin  
-git pull origin master  --> pulls the origin files (always do that, as someone else might have changed the files)
+git remote add origin https://github.com/georzaza/Statistics
 ```
-do your changes or add new files or even subfolders with files on your working directory and then
+## Download the latest origin 
+This will download everything from the git. (will create folders etc)
+```
+git pull origin master
+```
+## do your changes or add new files or even subfolders with files on your working directory and then
+## Add the files you want to upload
 ```
 git add .                   --> adds every change (files, subfolders with files)
 git add path_of_file        --> adds only specific file or files
-
-git commit -m "The_message_of_the_commit"   --> Using this message we can track the changes later, so maybe include your name here also?
-
-git push -u origin master                        --> uploads the files you added with git add command and every file will have the message of git commit command.
+```
+## Add a message that will accompany these files
+This is useful for version control (e.g. roll back to a previous version of a file)
+```
+git commit -m "The_message_of_the_commit"
+```
+## Upload the files you selected with the previous command
+```
+git push -u origin master
 ```
 
 Hint: Maybe create a batch file to skip through some of these commads?
